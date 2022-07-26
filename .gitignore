@@ -1,0 +1,2 @@
+# Ignore DS_Store in Macos
+**/*.DS_Store 
