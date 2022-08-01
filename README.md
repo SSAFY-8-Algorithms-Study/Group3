@@ -24,6 +24,6 @@
 |[1051](https://www.acmicpc.net/problem/1051)| ✅ | ✅ | ✅  | ✅  |
 |[1059](https://www.acmicpc.net/problem/1059)| ✅ | ✅ | ✅  | ✅  |
 |[2468](https://www.acmicpc.net/problem/2468)|   | ✅ | ✅ | ✅  |
-|[2573](https://www.acmicpc.net/problem/2573)|   | ✅ |   | ✅  |
+|[2573](https://www.acmicpc.net/problem/2573)|   | ✅ | ✅  | ✅  |
 
 
