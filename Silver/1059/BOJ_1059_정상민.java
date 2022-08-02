@@ -18,7 +18,7 @@ public class Main {
 		}
 		Arrays.sort(arr);//집합 정렬
 		st = new StringTokenizer(br.readLine());
-		int n = Integer.parseInt(st.nextToken()); //n값 입력
+		int n = Integer.parseInt(st.nextToken()); //n값 입력3
 		for(int i=0;i<L;i++) {
 			if(i == 0 && arr[i]>n) { //첫번째 값이 n보다 클때
 				for(int j=1;j<n;j++) {
@@ -43,7 +43,7 @@ public class Main {
 			else if(arr[i] == n) { //집합에 n값있으면 0출력 후 종료
 				System.out.println(0);
 				return;
-			}
-		}
+			} 
+		} // 이문제에서 놓쳤던 것들 : n값이 집합 최초값보다 작을때 
 	}
 }
