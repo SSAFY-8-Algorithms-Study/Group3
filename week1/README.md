@@ -1,4 +1,4 @@
-[200~## 📚 Problem List 
+## 📚 Problem List 
 
 ### Solved : ✅
 
