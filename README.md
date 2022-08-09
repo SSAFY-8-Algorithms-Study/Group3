@@ -39,4 +39,4 @@
 |[2304](https://www.acmicpc.net/problem/2304)|  |  | ✅  |   |
 |[2630](https://www.acmicpc.net/problem/2630)|  |  | ✅  |   |
 |[2206](https://www.acmicpc.net/problem/2206)|  |  | ✅  |   |
-|[1931](https://www.acmicpc.net/problem/1931)|  |  | ✅  |   |
+|[1931](https://www.acmicpc.net/problem/1931)|  |  |   |   |
