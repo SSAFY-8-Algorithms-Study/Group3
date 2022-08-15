@@ -3,122 +3,105 @@ package week2;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.StringTokenizer;
+import java.util.LinkedList;
+import java.util.Queue;
 
 //벽 부수고 이동하기
 public class BOJ_2206_최규림 {
 
-	static int n, m;
+	static int n, m; // 배열 크기
+	static int[][] map;
+	static boolean[][][] visited; // 2가지 경로 나눠서 방문여부 확인하기 위해 3차원 배열로 선언
+
+	static int loed = 1; // 이동 가능 경로
+	static int wall = Integer.MAX_VALUE; // 벽
+	static int answer = Integer.MAX_VALUE;
+
 	static int[] dr = { -1, 1, 0, 0 };
 	static int[] dc = { 0, 0, -1, 1 };
-	static int wall = Integer.MAX_VALUE;
-	static int[][] map;
-	static Deque<int[]> q = new ArrayDeque<>();
 
+	static class Point {
+		int r, c, cnt, crushed; // 좌표, 이동 횟수, 벽 부순 이력
+
+		Point(int r, int c, int cnt, int crushed) {
+			this.r = r;
+			this.c = c;
+			this.cnt = cnt;
+			this.crushed = crushed;
+		}
+	}
+
+	// 범위 확인
 	static boolean checkRange(int r, int c) {
-		return (r >= 0) && (r < n) && (c >= 0) && (c < m);
-	}
-
-	static boolean checkBlock(int r, int c) {
-		int check = 0;
-		// 상하좌우 탐색
-		for (int i = 0; i < 4; i++) {
-			int nr = r + dr[i];
-			int nc = c + dc[i];
-
-			if (!(checkRange(nr, nc) && map[nr][nc] != wall)) {
-				check++;
-			}
-		}
-		// 4방향 모두 이동 불가하면, 해당 벽 부술 필요 없음 -> block true
-		return (check == 4) ? true : false;
-	}
-
-	static int bfs() {
-		Map<Integer, HashSet<Integer>> visited = new HashMap<>();
-		Deque<int[]> tempQ = new ArrayDeque<>();
-		tempQ.add(new int[] { 0, 0, 1 });
-		for (int i = 0; i < n; i++) {
-			visited.put(i, new HashSet<Integer>());
-		}
-		visited.get(0).add(0);
-		visited.put(0, visited.get(0));
-
-		while (!tempQ.isEmpty()) {
-			int[] target = tempQ.pollFirst();
-			int r = target[0];
-			int c = target[1];
-			int dist = target[2];
-
-			for (int i = 0; i < 4; i++) {
-				int nr = r + dr[i];
-				int nc = c + dc[i];
-
-				if (checkRange(nr, nc) && map[nr][nc] != wall && !visited.get(nr).contains(nc)) {
-					visited.get(nr).add(nc);
-					visited.put(nr, visited.get(nr));
-					tempQ.add(new int[] { nr, nc, dist + 1 });
-				}
-
-				if (nr == n - 1 && nc == m - 1) {
-					return dist + 1;
-				}
-			}
-
-		}
-
-		return -1;
+		return (r >= 1) && (r <= n) && (c >= 1) && (c <= m);
 	}
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st;
-		st = new StringTokenizer(br.readLine(), " ");
-		n = Integer.parseInt(st.nextToken());
-		m = Integer.parseInt(st.nextToken());
-		map = new int[n][m];
-		for (int r = 0; r < n; r++) {
-			String str = br.readLine();
-			for (int c = 0; c < m; c++) {
-				// 벽인 경우
-				if (str.charAt(c) == '1') {
-					map[r][c] = wall;
+		String[] input = br.readLine().split(" ");
+		n = Integer.parseInt(input[0]);
+		m = Integer.parseInt(input[1]);
+		map = new int[n + 1][m + 1];
 
-					// 부수는 의미가 있는 벽인지 확인
-					if (!checkBlock(r, c)) {
-						q.add(new int[] { r, c });
-					}
-				}
-				// 벽이 아닌 경우
-				else {
-					map[r][c] = 0;
-				}
+		// 0: 벽을 안부수고 이동한 경로, 1: 벽을 부수고 이동한 경로
+		visited = new boolean[n + 1][m + 1][2];
+
+		for (int r = 1; r <= n; r++) {
+			char[] cArr = br.readLine().toCharArray();
+			for (int c = 1; c <= m; c++) {
+				map[r][c] = (cArr[c - 1] == '1') ? wall : 0;
 			}
 		}
 
-		int answer = Integer.MAX_VALUE;
-		for (int i = 0; i < q.size(); i++) {
-			int[] target = q.pollFirst();
-			// 벽 부숨
-			map[target[0]][target[1]] = 0;
+		bfs();
+		System.out.println((answer == Integer.MAX_VALUE) ? -1 : answer);
+	}
 
-			int result = bfs();
-			if (result != -1) {
-				answer = Math.min(answer, result);
+	static void bfs() {
+		Queue<Point> q = new LinkedList<>();
+		q.add(new Point(1, 1, 1, 0));
+		visited[1][1][0] = true; // 출발지점, 벽 안부수고 이동
+
+		while (!q.isEmpty()) {
+			Point now = q.poll();
+			if (now.r == n && now.c == m) {
+				answer = now.cnt;
+				break;
 			}
 
-			// 벽 고침
-			map[target[0]][target[1]] = wall;
+			for (int i = 0; i < 4; i++) {
+				int nr = now.r + dr[i];
+				int nc = now.c + dc[i];
+
+				// 범위 벗어난 경우
+				if (!checkRange(nr, nc)) {
+					continue;
+				}
+
+				// 이전에 같은 방식으로 방문한 경우(부수고 이동 or 그냥 이동) -> 같은 방식인지 구분해줘야 함
+				if (visited[nr][nc][now.crushed]) {
+					continue;
+				}
+
+				// 벽을 만났는데 이전에 벽은 부순 적이 있는 경우
+				if (map[nr][nc] == wall && now.crushed == 1) {
+					continue;
+				}
+
+				// 벽을 만난 경우, 벽을 부수고 이동
+				if (map[nr][nc] == wall) {
+					q.add(new Point(nr, nc, now.cnt + 1, 1));
+					visited[nr][nc][1] = true;
+				} else {
+					// (nr, nc) 이동하기 전 now에서 벽을 부수고 이동했는지 안했는지 모르므로
+					// 0 이 아닌, 이전의 now.crused 그대로 사용
+					q.add(new Point(nr, nc, now.cnt + 1, now.crushed));
+					visited[nr][nc][now.crushed] = true;
+				}
+			}
+
 		}
-		answer = (answer == Integer.MAX_VALUE) ? -1 : answer;
-		System.out.println(answer);
+
 	}
 
 }
