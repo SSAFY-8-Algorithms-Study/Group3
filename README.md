@@ -24,7 +24,9 @@
 - 파일명 규칙: [사이트_번호_이름] <사이트명: 백준(BOJ), SW Expert Academy(SWEA)>
 <br>
 
-    ``` BOJ_1234_김싸피 ```
+    ```
+    BOJ_1234_김싸피 
+    ```
 
 ### Commit Message 규칙
 
@@ -32,7 +34,10 @@
   - [ADD(Pass/Fail)] : Git에 파일을 추가할때 문제풀이 성공 여부와 함께 표기
   <br>
 
-      ```[ADD/Pass] BOJ 2630 ```
+      ```
+      [ADD/Pass] BOJ 2630
+      
+      ```
   - UPDATE : 코드 안에 새로운 기능을 추가/삭제 할 때
   <br>
 
