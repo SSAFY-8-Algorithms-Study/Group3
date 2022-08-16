@@ -32,20 +32,20 @@
   - [ADD(Pass/Fail)] : Git에 파일을 추가할때 문제풀이 성공 여부와 함께 표기
   <br>
 
-    ```[ADD/Pass] BOJ 2630 ```
+      ```[ADD/Pass] BOJ 2630 ```
   - UPDATE : 코드 안에 새로운 기능을 추가/삭제 할 때
   <br>
 
-    ```[UPDATE] BOJ 2630 | StringBuilder 활용 ```
+      ```[UPDATE] BOJ 2630 | StringBuilder 활용 ```
   - REDO : 해당 문제를 다시 풀이할 때 (오답노트때 활용)
   <br>
 
-    ```[REDO] BOJ 2630 (2022.08.09) ```
+      ```[REDO] BOJ 2630 (2022.08.09) ```
 
   - DELETE : Git에서 파일을 삭제할 때
   <br>
 
-    ```[DELETE] .gitignore ```
+      ```[DELETE] .gitignore ```
 
 
 ### 회차 별 문제 목록
