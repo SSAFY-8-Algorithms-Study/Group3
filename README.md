@@ -26,7 +26,6 @@
 
     ```
     BOJ_1234_김싸피
-    
     ```
 
 ### Commit Message 규칙
