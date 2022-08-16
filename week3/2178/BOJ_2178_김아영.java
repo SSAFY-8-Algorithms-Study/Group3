@@ -1,34 +1,68 @@
-package week3;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
-import java.util.HashSet;
-import java.util.Scanner;
+public class Main {
 
-public class BOJ_2178_김아영 {
-
-	static int arr[] = {1,5,10,50};
-	static HashSet<Integer> arrsum;
-	static int N;
+	static int N, M;
+	static int map[][];
+	static boolean visit[][];
+	static int direct[][]= {{0,1},{0,-1},{1,0},{-1,0}};
+	static int MIN;
 	
-	public static void dfs(int level, int sum, int start) {
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		if (level > N) return;
-
-		if (level == N) {
-			arrsum.add(sum);
-			return ;
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		map = new int[N][M];
+		visit = new boolean[N][M];
+		
+		for(int i=0;i<N;i++) {
+			String s = br.readLine();
+			for(int j=0;j<M;j++) {
+				map[i][j] = s.charAt(j) - '0';
+			}
 		}
 		
-		for(int i=start;i<4;i++) {
-			dfs(level + 1, sum + arr[i], i);
-		}
-		
+		bfs(0,0);
+		System.out.println(MIN);
 	}
 	
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		N = sc.nextInt();
-		arrsum = new HashSet<>();
-		dfs(0,0,0);
-		System.out.println(arrsum.size());
+	static class Point{
+		int i, j, cnt;
+		Point(int i, int j, int cnt){
+			this.i = i;
+			this.j = j;
+			this.cnt = cnt;
+		}
+	}
+	
+	static void bfs(int i, int j) {
+		Queue<Point> queue = new LinkedList<>();
+		queue.add(new Point(i, j, 0));
+		visit[i][j] = true;
+		
+		while (!queue.isEmpty()) {
+			Point now = queue.poll();		
+			if (now.i == N - 1 && now.j == M - 1) {
+				MIN = now.cnt + 1;
+				break;
+			}
+			
+			for(int d=0;d<4;d++) {
+	            int dx = now.i + direct[d][0];
+	            int dy = now.j + direct[d][1];
+	            if (dx <0 || dy <0 || dx >=N ||dy >= M)continue;
+	            if (map[dx][dy] == 1 && !visit[dx][dy]) {
+	            	visit[dx][dy] = true;
+		            queue.add(new Point(dx, dy, now.cnt + 1));
+				}
+	        }	
+		}	
 	}
 }
