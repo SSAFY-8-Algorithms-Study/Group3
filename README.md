@@ -24,7 +24,7 @@
 - 파일명 규칙: [사이트_번호_이름] <사이트명: 백준(BOJ), SW Expert Academy(SWEA)>
 <br>
 
-``` BOJ_1234_김싸피 ```
+    ``` BOJ_1234_김싸피 ```
 
 ### Commit Message 규칙
 
