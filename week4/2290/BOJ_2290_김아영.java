@@ -142,5 +142,4 @@ public class BOJ_2290_김아영 {
 		
 
 	}
-
 }
