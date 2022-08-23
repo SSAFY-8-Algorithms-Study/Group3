@@ -203,7 +203,7 @@ public class BOJ_2290_최규림 {
 		for (int j = sc + 1; j < ec - 1; j++) {
 			map[sr][j] = '-';
 			map[r / 2][j] = '-';
-			map[er - 1][j] = '-';			
+			map[er - 1][j] = '-';
 		}
 
 		for (int i = sr + 1; i < er - 1; i++) {
@@ -219,7 +219,7 @@ public class BOJ_2290_최규림 {
 	static void print() {
 		for (int i = 0; i < r; i++) {
 			for (int j = 0; j < C; j++) {
-				if (j % c == 0) {
+				if (j % c == 0 && j != 0) {
 					System.out.print(" ");
 				}
 				System.out.print(map[i][j]);
