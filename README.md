@@ -115,4 +115,16 @@
     <td align="center">8월 3주차</td>
     <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/04_8_3week">목록보기</a></td>
   </tr>
+<tr>
+    <td align="center">05</td>
+    <td align="center">
+      <a href="https://www.acmicpc.net/problem/2596"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/5.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/18429"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/16918"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/17142"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/16235"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" class="solvedac-tier" width=20px></a>
+    </td>
+    <td align="center">8월 4주차</td>
+    <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/04_8_4week">목록보기</a></td>
+  </tr>
 </table>
