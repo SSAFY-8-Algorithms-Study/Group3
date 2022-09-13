@@ -1,10 +1,12 @@
+package baek;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class Main{
+public class Main_2310어드벤처게임 {
 	static class room{
 		int num,pay;
 		ArrayList<Integer> arr;
@@ -47,8 +49,8 @@ public class Main{
 			else if(rooms[0].type == 'L') {
 				dfs(rooms[0].pay,0);
 			}
-			if(flag) sb.append("YES\n");
-			else sb.append("NO\n");
+			if(flag) sb.append("Yes\n");
+			else sb.append("No\n");
 		}
 		System.out.println(sb);
 	}
@@ -80,11 +82,9 @@ public class Main{
 					visit[nroom] = true;
 					dfs(money-rooms[nroom].pay,nroom);
 					visit[nroom] = false;
-
 				}
 				else return;
 			}
-			visit[nroom] = false;
 		}
 	}
 //	private static boolean bfs() {
