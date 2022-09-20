@@ -51,11 +51,11 @@ public class BOJ_1325_김아영 {
 			int n = q.poll();
 			for (int m : list[n]) {
 				if(visit[m]) continue;
-				cnt[number]++; // 시작점에대해 해킹가능한 컴퓨터 수를 증가
+				cnt[number]++; 
 				visit[m] = true;
 				q.offer(m);
 			}
 		}
-		ans = Math.max(ans, cnt[number]); // bfs 끝나면 현재 값을 ans와 비교하여 큰값을 저장
+		ans = Math.max(ans, cnt[number]); 
 	}
 }
