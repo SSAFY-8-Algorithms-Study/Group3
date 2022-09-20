@@ -39,7 +39,7 @@ public class BOJ_17070_김아영 {
 		}
 		
 	}
-	
+
 	static void checkyes(int x, int y, int level) {
 		
 		if (level == 0) {
