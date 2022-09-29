@@ -164,4 +164,28 @@
     <td align="center">9월 3주차</td>
     <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/08_9_3week">목록보기</a></td>
   </tr>
+  <tr>
+    <td align="center">09</td>
+    <td align="center">
+      <a href="https://www.acmicpc.net/problem/2579"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/17086"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/2805"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/2660"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/18428"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" class="solvedac-tier" width=20px></a>
+    </td>
+    <td align="center">9월 4주차</td>
+    <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/09_9_4week">목록보기</a></td>
+  </tr>
+  <tr>
+    <td align="center">10</td>
+    <td align="center">
+      <a href="https://www.acmicpc.net/problem/18353"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/9.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/9205"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/1189"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/17179"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/6987"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" class="solvedac-tier" width=20px></a>
+    </td>
+    <td align="center">9월 5주차</td>
+    <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/10_9_5week">목록보기</a></td>
+  </tr>
 </table>
