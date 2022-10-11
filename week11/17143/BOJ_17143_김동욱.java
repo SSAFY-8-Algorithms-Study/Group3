@@ -84,7 +84,7 @@ public class BOJ_17143_김동욱 {
 		int fisherman=-1;
 
 		
-		print();
+		//print();
 		while(true) {
 			fisherman++;
 			if(fisherman>C-1) {
@@ -93,8 +93,8 @@ public class BOJ_17143_김동욱 {
 			catchFish(fisherman);
 			sharks = moveShark();
 			sharks= spreadShark(sharks);
-			System.out.println(fisherman);
-			print();
+			//System.out.println(fisherman);
+			//print();
 		}
 		System.out.println(answer);
 	}
@@ -110,14 +110,21 @@ public class BOJ_17143_김동욱 {
 	public static PriorityQueue<Point> spreadShark(PriorityQueue<Point> tq) {
 		int[][] tempBoard= new int[R][C];
 		PriorityQueue<Point> returnList = new PriorityQueue<Point>();
-		for(Point p : tq) {
-			if(tempBoard[p.x][p.y]!=0) {
-				if(tempBoard[p.x][p.y] >p.size) { //기존에 있던 상어가 크다면
-					continue;
-				}
+//		for(Point p : tq) {
+//			if(tempBoard[p.x][p.y]!=0) {
+//				if(tempBoard[p.x][p.y] >p.size) { //기존에 있던 상어가 크다면
+//					continue;
+//				}
+//			}
+//			tempBoard[p.x][p.y]= p.size;
+//			returnList.add(p);
+//		}
+		while(!tq.isEmpty()) {
+			Point tempPoint= tq.poll();
+			if(tempBoard[tempPoint.x][tempPoint.y] == 0) {
+				tempBoard[tempPoint.x][tempPoint.y]=tempPoint.size;
+				returnList.add(tempPoint);
 			}
-			tempBoard[p.x][p.y]= p.size;
-			returnList.add(p);
 		}
 		board=tempBoard;
 		return returnList;
