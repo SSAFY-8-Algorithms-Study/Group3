@@ -12,5 +12,5 @@
 |[11403](https://www.acmicpc.net/problem/9205)| ✅  |   |  | ✅ | ✅ |
 |[2624](https://www.acmicpc.net/problem/1189)|   |   |  | ✅ | ✅ |
 |[8982](https://www.acmicpc.net/problem/17179)|   |   |  |  |  |
-|[17143](https://www.acmicpc.net/problem/6987)|   |  |  | ✅  | ✅ |
+|[17143](https://www.acmicpc.net/problem/6987)|✅   |  |  | ✅  | ✅ |
 
