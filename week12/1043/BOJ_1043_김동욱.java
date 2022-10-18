@@ -26,7 +26,7 @@ public class BOJ_1043_김동욱 {
 		for(int i=0; i<M; i++) {
 			cnt = sc.nextInt();
 			group[i] = new ArrayList<>();
-			int canLie = 1;
+			
 			
 			for(int j=0; j<cnt; j++) {
 				int people = sc.nextInt();
