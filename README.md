@@ -150,6 +150,28 @@
     <td align="center">10월 4주차</td>
     <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/14_10_4week">목록보기</a></td>
   </tr>
+     <tr>
+    <td align="center">05</td>
+    <td align="center">
+      <a href="https://www.acmicpc.net/problem/2596"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/5.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/18429"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/16918"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/17142"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/16235"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" class="solvedac-tier" width=20px></a>
+    </td>
+    <td align="center">8월 4주차</td>
+    <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/05_8_4week">목록보기</a></td>
+    <td align="center">15</td>
+    <td align="center">
+      <a href="https://www.acmicpc.net/problem/1459"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/7.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/2688"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/20437"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/1956"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" class="solvedac-tier" width=20px></a>
+      <a href="https://www.acmicpc.net/problem/21609"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" class="solvedac-tier" width=20px></a>
+    </td>
+    <td align="center">11월 1주차</td>
+    <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/15_11_1week">목록보기</a></td>
+  </tr>
   <tr>
     <td align="center">05</td>
     <td align="center">
@@ -222,26 +244,5 @@
     <td align="center">9월 5주차</td>
     <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/10_9_5week">목록보기</a></td>
   </tr>
-   <tr>
-    <td align="center">05</td>
-    <td align="center">
-      <a href="https://www.acmicpc.net/problem/2596"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/5.svg" class="solvedac-tier" width=20px></a>
-      <a href="https://www.acmicpc.net/problem/18429"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/8.svg" class="solvedac-tier" width=20px></a>
-      <a href="https://www.acmicpc.net/problem/16918"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" class="solvedac-tier" width=20px></a>
-      <a href="https://www.acmicpc.net/problem/17142"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" class="solvedac-tier" width=20px></a>
-      <a href="https://www.acmicpc.net/problem/16235"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/13.svg" class="solvedac-tier" width=20px></a>
-    </td>
-    <td align="center">8월 4주차</td>
-    <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/05_8_4week">목록보기</a></td>
-    <td align="center">15</td>
-    <td align="center">
-      <a href="https://www.acmicpc.net/problem/1459"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/7.svg" class="solvedac-tier" width=20px></a>
-      <a href="https://www.acmicpc.net/problem/2688"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/10.svg" class="solvedac-tier" width=20px></a>
-      <a href="https://www.acmicpc.net/problem/20437"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/11.svg" class="solvedac-tier" width=20px></a>
-      <a href="https://www.acmicpc.net/problem/1956"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/12.svg" class="solvedac-tier" width=20px></a>
-      <a href="https://www.acmicpc.net/problem/21609"><img src="https://d2gd6pc034wcta.cloudfront.net/tier/14.svg" class="solvedac-tier" width=20px></a>
-    </td>
-    <td align="center">11월 1주차</td>
-    <td align="center"><a href="https://github.com/SSAFY-8-Algorithms-Study/Study-notice/tree/main/questions/15_11_1week">목록보기</a></td>
-  </tr>
+  
 </table>
