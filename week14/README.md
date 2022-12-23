@@ -11,6 +11,6 @@
 |[2003](https://www.acmicpc.net/problem/2003)| ✅  | ✅  | ✅ | ✅ | ✅ |
 |[11060](https://www.acmicpc.net/problem/11060)| ✅  | ✅  | ✅ | ✅ | ✅ |
 |[21610](https://www.acmicpc.net/problem/21610)| ✅  |   | ✅ | ✅ | ✅ |
-|[1670](https://www.acmicpc.net/problem/1670)|   |   |  |  |  |
+|[1670](https://www.acmicpc.net/problem/1670)|   |   |  | ✅ |  |
 |[1826](https://www.acmicpc.net/problem/1826)| ✅  |  | ✅ | ✅ |✅ |
 
