@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
+
 public class BOJ_21609_김아영 {
 
 	static int N, M, result, MAXBolckSize, MAXrainBlock, colBlock, rowBlock; // 행 렬
